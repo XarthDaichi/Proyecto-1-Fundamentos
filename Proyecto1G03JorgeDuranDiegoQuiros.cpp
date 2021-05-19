@@ -47,7 +47,7 @@ int XOR(int n, int m){   //Realiza la operacion logica XOR
 	int resultado=0;
 	for(int i=0;i<8;i++,n/=10,m/=10){
 		if(n%10!=m%10){
-			resultado+=pot(10,i);
+			resultado+=pot(10,i); //Se puede cambiar por variable potencia cada vez se multiplica por 10.
 		}
 	}
 	return resultado;
